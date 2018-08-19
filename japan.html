@@ -29,7 +29,7 @@
                 高校野球都道府県別勝利数
             </h1>
             <h4 class="subtitle">
-                高校野球夏の大会の都道府県別勝利数をマッピングしています。勝利数が多い都道府県ほど、濃い色で表示されます。
+                高校野球夏の大会の都道府県別勝利数をマッピングしています。勝利数が多い都道府県ほど、濃い色で表示されます。<br>
             </h2>
             <p>
 
@@ -119,7 +119,6 @@ d3.json("./lib/japan.topojson", function(data) {
                         .attr("fill", "black")
                         ;
 
-
 var pref_details_school2 = svg.append("text")
 .attr("x", 50)
 .attr("y", 100)
@@ -151,6 +150,15 @@ var pref_details_school5 = svg.append("text")
 .attr("stroke", "none")
 .attr("fill", "black")
 ;
+
+//スマートなデフォルト値にしたい。色薄くするとか。or タップしてくださいって文章で書くか。
+pref_details.text("夏 " + "兵庫県" + ": " + "137"+"勝");
+pref_details_school.text("報徳学園 28勝")
+pref_details_school2.text("東洋大姫路 20勝")
+pref_details_school3.text("育英 17勝")
+pref_details_school4.text("明石 9勝")
+pref_details_school5.text("県芦屋 9勝")
+
 
 
   function showDetails(pref){
