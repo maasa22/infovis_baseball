@@ -3,190 +3,238 @@ JapanPopulationData =
 [
   {
     "Prefecture": "大阪府",
-    "win_summer": 170
+    "win_summer": 170,
+    "team_100": "大阪桐蔭, 近大付"
   },
   {
     "Prefecture": "兵庫県",
-    "win_summer": 137
+    "win_summer": 137,
+    "team_100": "報徳学園, 明石商"
   },
   {
     "Prefecture": "東京都",
-    "win_summer": 177
+    "win_summer": 177,
+    "team_100": "二松学舎大付, 日大三"
   },
   {
     "Prefecture": "愛知県",
-    "win_summer": 130
+    "win_summer": 130,
+    "team_100": "愛産大三河, 愛工大名電"
   },
   {
     "Prefecture": "和歌山県",
-    "win_summer": 120
+    "win_summer": 120,
+    "team_100": "智弁和歌山"
   },
   {
     "Prefecture": "広島県",
-    "win_summer": 119
+    "win_summer": 119,
+    "team_100": "広陵"
   },
   {
     "Prefecture": "神奈川県",
-    "win_summer": 126
+    "win_summer": 126,
+    "team_100": "慶応, 横浜"
   },
   {
     "Prefecture": "京都府",
-    "win_summer": 120
+    "win_summer": 120,
+    "team_100": "龍谷大平安"
   },
   {
     "Prefecture": "愛媛県",
-    "win_summer": 121
+    "win_summer": 121,
+    "team_100": "済美"
   },
   {
     "Prefecture": "高知県",
-    "win_summer": 94
+    "win_summer": 94,
+    "team_100": "高知商"
   },
   {
     "Prefecture": "福岡県",
-    "win_summer": 92
+    "win_summer": 92,
+    "team_100": "折尾愛真, 沖学園"
   },
   {
     "Prefecture": "静岡県",
-    "win_summer": 87
+    "win_summer": 87,
+    "team_100": "常葉大菊川"
   },
   {
     "Prefecture": "岐阜県",
-    "win_summer": 72
+    "win_summer": 72,
+    "team_100": "大垣日大"
   },
   {
     "Prefecture": "徳島県",
-    "win_summer": 65
+    "win_summer": 65,
+    "team_100": "鳴門"
   },
   {
     "Prefecture": "奈良県",
-    "win_summer": 82
+    "win_summer": 82,
+    "team_100": "奈良大付"
   },
   {
     "Prefecture": "千葉県",
-    "win_summer": 96
+    "win_summer": 96,
+    "team_100": "木更津総合, 中央学院"
   },
   {
     "Prefecture": "香川県",
-    "win_summer": 67
+    "win_summer": 67,
+    "team_100": "丸亀城西"
   },
   {
     "Prefecture": "北海道",
-    "win_summer": 72
+    "win_summer": 72,
+    "team_100": "旭川大, 北照"
   },
   {
     "Prefecture": "埼玉県",
-    "win_summer": 70
+    "win_summer": 70,
+    "team_100": "花咲徳栄, 浦和学院"
   },
   {
     "Prefecture": "山口県",
-    "win_summer": 76
+    "win_summer": 76,
+    "team_100": "下関国際"
   },
   {
     "Prefecture": "岡山県",
-    "win_summer": 63
+    "win_summer": 63,
+    "team_100": "創志学園"
   },
   {
     "Prefecture": "群馬県",
-    "win_summer": 70
+    "win_summer": 70,
+    "team_100": "前橋育英"
   },
   {
     "Prefecture": "熊本県",
-    "win_summer": 63
+    "win_summer": 63,
+    "team_100": "東海大星翔"
   },
   {
     "Prefecture": "宮城県",
-    "win_summer": 69
+    "win_summer": 69,
+    "team_100": "仙台育英"
   },
   {
     "Prefecture": "栃木県",
-    "win_summer": 57
+    "win_summer": 57,
+    "team_100": "作新学院"
   },
   {
     "Prefecture": "沖縄県",
-    "win_summer": 70
+    "win_summer": 70,
+    "team_100": "興南"
   },
   {
     "Prefecture": "鹿児島県",
-    "win_summer": 66
+    "win_summer": 66,
+    "team_100": "鹿児島実"
   },
   {
     "Prefecture": "福井県",
-    "win_summer": 53
+    "win_summer": 53,
+    "team_100": "敦賀気比"
   },
   {
     "Prefecture": "長野県",
-    "win_summer": 60
+    "win_summer": 60,
+    "team_100": "佐久長聖"
   },
   {
     "Prefecture": "茨城県",
-    "win_summer": 53
+    "win_summer": 53,
+    "team_100": "土浦日大"
   },
   {
     "Prefecture": "大分県",
-    "win_summer": 58
+    "win_summer": 58,
+    "team_100": "藤蔭"
   },
   {
     "Prefecture": "宮崎県",
-    "win_summer": 53
+    "win_summer": 53,
+    "team_100": "日南学園"
   },
   {
     "Prefecture": "山梨県",
-    "win_summer": 41
+    "win_summer": 41,
+    "team_100": "山梨学院"
   },
   {
     "Prefecture": "長崎県",
-    "win_summer": 37
+    "win_summer": 37,
+    "team_100": "創成館"
   },
   {
     "Prefecture": "三重県",
-    "win_summer": 33
+    "win_summer": 33,
+    "team_100": "白山"
   },
   {
     "Prefecture": "青森県",
-    "win_summer": 46
+    "win_summer": 46,
+    "team_100": "八戸学院光星"
   },
   {
     "Prefecture": "秋田県",
-    "win_summer": 45
+    "win_summer": 45,
+    "team_100": "金足農"
   },
   {
     "Prefecture": "鳥取県",
-    "win_summer": 38
+    "win_summer": 38,
+    "team_100": "鳥取城北"
   },
   {
     "Prefecture": "石川県",
-    "win_summer": 37
+    "win_summer": 37,
+    "team_100": "星稜"
   },
   {
     "Prefecture": "岩手県",
-    "win_summer": 39
+    "win_summer": 39,
+    "team_100": "花巻東"
   },
   {
     "Prefecture": "滋賀県",
-    "win_summer": 34
+    "win_summer": 34,
+    "team_100": "近江"
   },
   {
     "Prefecture": "福島県",
-    "win_summer": 35
+    "win_summer": 35,
+    "team_100": "聖光学院"
   },
   {
     "Prefecture": "佐賀県",
-    "win_summer": 38
+    "win_summer": 38,
+    "team_100": "佐賀商"
   },
   {
     "Prefecture": "島根県",
-    "win_summer": 29
+    "win_summer": 29,
+    "team_100": "益田東"
   },
   {
     "Prefecture": "富山県",
-    "win_summer": 28
+    "win_summer": 28,
+    "team_100": "高岡商"
   },
   {
     "Prefecture": "山形県",
-    "win_summer": 23
+    "win_summer": 23,
+    "team_100": "羽黒"
   },
   {
     "Prefecture": "新潟県",
-    "win_summer": 28
+    "win_summer": 28,
+    "team_100": "中越"
   }
+
 ]};

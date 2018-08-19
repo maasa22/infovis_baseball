@@ -45,7 +45,7 @@ var width = 800;
 var height = 800;
     //d3.select("body").append("p").text("新しいパラグラフ！");
 var color = d3.scaleLinear()
-              .domain([0, 200])
+              .domain([20, 180]) //山形23, 東京177
               .range([255, 0]);
 
 var svg = d3.select("body")
@@ -54,22 +54,24 @@ var svg = d3.select("body")
             .attr("height", height);
 
 var populationHash = {};
+var populationHash2 = {};
 
 JapanPopulationData.Data.forEach(function (d){
   //populationHash[d.Prefecture] = d.Population_2010;
   populationHash[d.Prefecture] = d.win_summer;
+  populationHash2[d.Prefecture] = d.team_100;
 });
 
-var populationHash2 = {};
 var populationHash3 = {};
+var populationHash4 = {};
 
 JapanPopulationData2.Data.forEach(function (d){
   //populationHash[d.Prefecture] = d.Population_2010;
   if (d.win_summer !== "-"){
-  populationHash2[d.school_name] = d.pref_name;//違う。。。データの型を変えた方が良さそう。上手くインデントさせる。
+  populationHash3[d.school_name] = d.pref_name;//違う。。。データの型を変えた方が良さそう。上手くインデントさせる。
 }
   if (d.win_summer !== "-"){
-  populationHash3[d.school_name] = d.win_summer;
+  populationHash4[d.school_name] = d.win_summer;
 }
 
 });
@@ -104,51 +106,68 @@ d3.json("./lib/japan.topojson", function(data) {
       });
 
   var pref_details = svg.append("text")
-                        .attr("x", 50)
-                        .attr("y", 50)
-                        .attr("font-size", 24)
+                        .attr("x", 40)
+                        .attr("y", 40)
+                        .attr("font-size", 26)
                         .attr("stroke", "none")
-                        .attr("fill", "black");
+                        .attr("fill", "#000000");
+
 
 
   var pref_details_school = svg.append("text")
-                        .attr("x", 50)
-                        .attr("y", 80)
+                        .attr("x", 40)
+                        .attr("y", 100)
                         .attr("font-size", 18)
                         .attr("stroke", "none")
                         .attr("fill", "black")
                         ;
 
-var pref_details_school2 = svg.append("text")
-.attr("x", 50)
-.attr("y", 100)
+var pref_details_school0 = svg.append("text")
+.attr("x", 40)
+.attr("y", 76)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
+.text("夏の勝利数上位5校")
 ;
 
-var pref_details_school3 = svg.append("text")
-.attr("x", 50)
+var pref_details_school2 = svg.append("text")
+.attr("x", 40)
 .attr("y", 120)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
 ;
 
-var pref_details_school4 = svg.append("text")
-.attr("x", 50)
+var pref_details_school3 = svg.append("text")
+.attr("x", 40)
 .attr("y", 140)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
 ;
 
-var pref_details_school5 = svg.append("text")
-.attr("x", 50)
+var pref_details_school4 = svg.append("text")
+.attr("x", 40)
 .attr("y", 160)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
+;
+
+var pref_details_school5 = svg.append("text")
+.attr("x", 40)
+.attr("y", 180)
+.attr("font-size", 18)
+.attr("stroke", "none")
+.attr("fill", "black")
+;
+var pref_details_school6 = svg.append("text")
+.attr("x", 40)
+.attr("y", 224)
+.attr("font-size", 26)
+.attr("stroke", "none")
+.attr("fill", "#006600")
 ;
 
 //スマートなデフォルト値にしたい。色薄くするとか。or タップしてくださいって文章で書くか。
@@ -158,6 +177,7 @@ pref_details_school2.text("東洋大姫路 20勝")
 pref_details_school3.text("育英 17勝")
 pref_details_school4.text("明石 9勝")
 pref_details_school5.text("県芦屋 9勝")
+pref_details_school6.text("第100会大会: 報徳学園, 明石商")
 
 
 
@@ -166,18 +186,19 @@ pref_details_school5.text("県芦屋 9勝")
   +"勝");
 
     var school_name_list = [["", ""]]; //初期化の仕方分からないので空文字入れる。
-    const keys = Object.keys(populationHash2);
+    const keys = Object.keys(populationHash3);
 
     for (let i = 0; i < keys.length; i++) {
       school_name = keys[i]
-      win_summer = populationHash3[school_name]
-      if (populationHash2[school_name] === pref) {
+      win_summer = populationHash4[school_name]
+      if (populationHash3[school_name] === pref) {
         school_name_list.push([school_name, win_summer]);
         //school_name_list = keys[i];
       }
     }
     school_name_list.shift(); //先行削除して元に戻す。
-    console.log(school_name_list);
+    //console.log(school_name_list);
+    console.log(pref, school_name_list);
 
     var school_text = ""
     //for (let i = 0; i < school_name_list.length; i++) {
@@ -197,6 +218,9 @@ pref_details_school5.text("県芦屋 9勝")
 
     school_text = school_name_list[4][0] + " " + school_name_list[4][1] + "勝" + "\n"
     pref_details_school5.text(school_text);
+
+    school_text = "第100会大会: " + populationHash2[pref]
+    pref_details_school6.text(school_text)
 
 
     //強豪校の強さをバブルチャートor棒グラフにしたい。
