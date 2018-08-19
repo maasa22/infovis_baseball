@@ -1,0 +1,3311 @@
+JapanPopulationData2 =
+{ "Country": "日本", "Data":
+  [
+  {
+    "school_name": "中京大中京",
+    "win_summer": 78,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "東邦",
+    "win_summer": 19,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "愛知商",
+    "win_summer": 7,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "享栄",
+    "win_summer": 6,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "愛工大名電",
+    "win_summer": 5,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "旭丘",
+    "win_summer": 5,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "豊田大谷",
+    "win_summer": 5,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "愛知",
+    "win_summer": 3,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "大府",
+    "win_summer": 2,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "時習館",
+    "win_summer": 0,
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "一宮",
+    "win_summer": "-",
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "豊川",
+    "win_summer": "-",
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "豊田西",
+    "win_summer": "-",
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "岡崎工",
+    "win_summer": "-",
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "成章",
+    "win_summer": "-",
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "津島",
+    "win_summer": "-",
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "愛知啓成",
+    "win_summer": "-",
+    "pref_name": "愛知県"
+  },
+  {
+    "school_name": "松山商",
+    "win_summer": 60,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "今治西",
+    "win_summer": 20,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "済美",
+    "win_summer": 12,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "西条",
+    "win_summer": 12,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "川之江",
+    "win_summer": 6,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "新居浜商",
+    "win_summer": 4,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "宇和島東",
+    "win_summer": 3,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "松山東",
+    "win_summer": 2,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "南宇和",
+    "win_summer": 1,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "今治南",
+    "win_summer": 1,
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "新田",
+    "win_summer": "-",
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "今治北",
+    "win_summer": "-",
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "松山北",
+    "win_summer": "-",
+    "pref_name": "愛媛県"
+  },
+  {
+    "school_name": "常総学院",
+    "win_summer": 28,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "水戸商",
+    "win_summer": 9,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "取手二",
+    "win_summer": 6,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "竜ケ崎一",
+    "win_summer": 3,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "藤代",
+    "win_summer": 1,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "土浦日大",
+    "win_summer": 1,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "水戸啓明",
+    "win_summer": 1,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "土浦一",
+    "win_summer": 1,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "取手一",
+    "win_summer": 1,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "日立一",
+    "win_summer": 1,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "明野",
+    "win_summer": 1,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "鉾田一",
+    "win_summer": 0,
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "日立工",
+    "win_summer": "-",
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "明秀日立",
+    "win_summer": "-",
+    "pref_name": "茨城県"
+  },
+  {
+    "school_name": "倉敷工",
+    "win_summer": 14,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "関西",
+    "win_summer": 11,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "岡山東商",
+    "win_summer": 11,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "倉敷商",
+    "win_summer": 8,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "岡山理大付",
+    "win_summer": 6,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "岡山南",
+    "win_summer": 3,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "玉野光南",
+    "win_summer": 3,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "玉島商",
+    "win_summer": 3,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "岡山朝日",
+    "win_summer": 2,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "岡山城東",
+    "win_summer": 1,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "創志学園",
+    "win_summer": 1,
+    "pref_name": "岡山県"
+  },
+  {
+    "school_name": "沖縄水産",
+    "win_summer": 20,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "興南",
+    "win_summer": 19,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "浦添商",
+    "win_summer": 10,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "沖縄尚学",
+    "win_summer": 7,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "豊見城",
+    "win_summer": 6,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "八重山商工",
+    "win_summer": 2,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "宜野座",
+    "win_summer": 1,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "嘉手納",
+    "win_summer": 1,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "那覇",
+    "win_summer": 1,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "首里",
+    "win_summer": 1,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "那覇商",
+    "win_summer": 1,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "石川",
+    "win_summer": 1,
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "普天間",
+    "win_summer": "-",
+    "pref_name": "沖縄県"
+  },
+  {
+    "school_name": "花巻東",
+    "win_summer": 10,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "盛岡一",
+    "win_summer": 7,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "盛岡大付",
+    "win_summer": 6,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "福岡",
+    "win_summer": 4,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "一関学院",
+    "win_summer": 3,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "専大北上",
+    "win_summer": 2,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "盛岡三",
+    "win_summer": 2,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "一関一",
+    "win_summer": 1,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "岩手",
+    "win_summer": 1,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "黒沢尻工",
+    "win_summer": 1,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "遠野",
+    "win_summer": 1,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "盛岡四",
+    "win_summer": 1,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "大船渡",
+    "win_summer": 0,
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "釜石",
+    "win_summer": "-",
+    "pref_name": "岩手県"
+  },
+  {
+    "school_name": "県岐阜商",
+    "win_summer": 39,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "中京学院大中京",
+    "win_summer": 7,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "岐阜第一",
+    "win_summer": 6,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "大垣日大",
+    "win_summer": 5,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "岐阜",
+    "win_summer": 5,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "大垣商",
+    "win_summer": 3,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "岐阜聖徳大付",
+    "win_summer": 2,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "岐阜城北",
+    "win_summer": 1,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "市岐阜商",
+    "win_summer": 1,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "大垣北",
+    "win_summer": 1,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "美濃加茂",
+    "win_summer": 1,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "土岐商",
+    "win_summer": 1,
+    "pref_name": "岐阜県"
+  },
+  {
+    "school_name": "日南学園",
+    "win_summer": 9,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "都城",
+    "win_summer": 7,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "高鍋",
+    "win_summer": 6,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "延岡学園",
+    "win_summer": 6,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "宮崎商",
+    "win_summer": 5,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "都城商",
+    "win_summer": 5,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "延岡工",
+    "win_summer": 3,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "日南",
+    "win_summer": 3,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "小林西",
+    "win_summer": 3,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "宮崎工",
+    "win_summer": 1,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "延岡商",
+    "win_summer": 1,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "宮崎大宮",
+    "win_summer": 1,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "宮崎南",
+    "win_summer": 1,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "佐土原",
+    "win_summer": 1,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "聖心ウルスラ",
+    "win_summer": 1,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "日向学院",
+    "win_summer": 0,
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "都城泉ケ丘",
+    "win_summer": "-",
+    "pref_name": "宮崎県"
+  },
+  {
+    "school_name": "仙台育英",
+    "win_summer": 33,
+    "pref_name": "宮城県"
+  },
+  {
+    "school_name": "東北",
+    "win_summer": 28,
+    "pref_name": "宮城県"
+  },
+  {
+    "school_name": "仙台商",
+    "win_summer": 4,
+    "pref_name": "宮城県"
+  },
+  {
+    "school_name": "仙台二",
+    "win_summer": 3,
+    "pref_name": "宮城県"
+  },
+  {
+    "school_name": "利府",
+    "win_summer": 1,
+    "pref_name": "宮城県"
+  },
+  {
+    "school_name": "一迫商",
+    "win_summer": "-",
+    "pref_name": "宮城県"
+  },
+  {
+    "school_name": "龍谷大平安",
+    "win_summer": 61,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "京都外大西",
+    "win_summer": 12,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "鳥羽",
+    "win_summer": 10,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "京都学園",
+    "win_summer": 8,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "西京",
+    "win_summer": 7,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "立命館",
+    "win_summer": 5,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "京都成章",
+    "win_summer": 5,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "福知山成美",
+    "win_summer": 4,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "東山",
+    "win_summer": 3,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "北嵯峨",
+    "win_summer": 2,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "京都二商",
+    "win_summer": 1,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "洛北",
+    "win_summer": 1,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "東宇治",
+    "win_summer": 1,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "京都師範学校",
+    "win_summer": 0,
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "伏見工",
+    "win_summer": "-",
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "堀川",
+    "win_summer": "-",
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "大谷",
+    "win_summer": "-",
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "乙訓",
+    "win_summer": "-",
+    "pref_name": "京都府"
+  },
+  {
+    "school_name": "熊本工",
+    "win_summer": 29,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "済々黌",
+    "win_summer": 8,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "鎮西",
+    "win_summer": 8,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "九州学院",
+    "win_summer": 7,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "秀岳館",
+    "win_summer": 5,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "文徳",
+    "win_summer": 2,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "城北",
+    "win_summer": 2,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "熊本",
+    "win_summer": 1,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "熊本西",
+    "win_summer": 1,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "熊本商",
+    "win_summer": 0,
+    "pref_name": "熊本県"
+  },
+  {
+    "school_name": "桐生第一",
+    "win_summer": 13,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "桐生",
+    "win_summer": 12,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "前橋工",
+    "win_summer": 12,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "前橋育英",
+    "win_summer": 9,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "健大高崎",
+    "win_summer": 6,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "東農大二",
+    "win_summer": 6,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "高崎商",
+    "win_summer": 5,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "前橋商",
+    "win_summer": 5,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "前橋",
+    "win_summer": 1,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "樹徳",
+    "win_summer": 1,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "桐生工",
+    "win_summer": 0,
+    "pref_name": "群馬県"
+  },
+  {
+    "school_name": "広島商",
+    "win_summer": 43,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "広陵",
+    "win_summer": 34,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "呉港",
+    "win_summer": 11,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "広島工",
+    "win_summer": 6,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "如水館",
+    "win_summer": 5,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "高陽東",
+    "win_summer": 4,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "崇徳",
+    "win_summer": 3,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "広島新庄",
+    "win_summer": 3,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "山陽",
+    "win_summer": 3,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "瀬戸内",
+    "win_summer": 2,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "尾道商",
+    "win_summer": 1,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "西条農",
+    "win_summer": 1,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "呉工",
+    "win_summer": 1,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "三原",
+    "win_summer": 1,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "盈進",
+    "win_summer": 1,
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "呉",
+    "win_summer": "-",
+    "pref_name": "広島県"
+  },
+  {
+    "school_name": "高松商",
+    "win_summer": 22,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "尽誠学園",
+    "win_summer": 13,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "坂出商",
+    "win_summer": 8,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "高松一",
+    "win_summer": 7,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "高松",
+    "win_summer": 5,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "志度",
+    "win_summer": 5,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "三本松",
+    "win_summer": 2,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "丸亀",
+    "win_summer": 2,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "観音寺総合",
+    "win_summer": 1,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "四国学院大香川西",
+    "win_summer": 1,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "英明",
+    "win_summer": 1,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "丸亀城西",
+    "win_summer": 0,
+    "pref_name": "香川県"
+  },
+  {
+    "school_name": "高知商",
+    "win_summer": 38,
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "明徳義塾",
+    "win_summer": 33,
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "高知",
+    "win_summer": 16,
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "土佐",
+    "win_summer": 6,
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "追手前",
+    "win_summer": 1,
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "伊野商",
+    "win_summer": 0,
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "中村",
+    "win_summer": "-",
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "室戸",
+    "win_summer": "-",
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "安芸",
+    "win_summer": "-",
+    "pref_name": "高知県"
+  },
+  {
+    "school_name": "佐賀商",
+    "win_summer": 13,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "佐賀北",
+    "win_summer": 6,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "佐賀学園",
+    "win_summer": 6,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "鹿島",
+    "win_summer": 3,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "鳥栖商",
+    "win_summer": 2,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "佐賀工",
+    "win_summer": 2,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "唐津商",
+    "win_summer": 2,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "鳥栖",
+    "win_summer": 1,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "神埼",
+    "win_summer": 1,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "佐賀西",
+    "win_summer": 1,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "有田工",
+    "win_summer": 1,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "龍谷",
+    "win_summer": 0,
+    "pref_name": "佐賀県"
+  },
+  {
+    "school_name": "浦和学院",
+    "win_summer": 12,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "花咲徳栄",
+    "win_summer": 12,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "春日部共栄",
+    "win_summer": 7,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "大宮",
+    "win_summer": 6,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "熊谷商",
+    "win_summer": 6,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "上尾",
+    "win_summer": 5,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "市浦和",
+    "win_summer": 4,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "熊谷",
+    "win_summer": 4,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "川越工",
+    "win_summer": 3,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "聖望学園",
+    "win_summer": 2,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "滑川総合",
+    "win_summer": 2,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "大宮工",
+    "win_summer": 1,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "川越",
+    "win_summer": 1,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "越谷西",
+    "win_summer": 1,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "埼玉栄",
+    "win_summer": 1,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "所沢商",
+    "win_summer": 1,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "立教新座",
+    "win_summer": 1,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "本庄一",
+    "win_summer": 1,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "大宮東",
+    "win_summer": 0,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "深谷商",
+    "win_summer": 0,
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "浦和",
+    "win_summer": "-",
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "西武台",
+    "win_summer": "-",
+    "pref_name": "埼玉県"
+  },
+  {
+    "school_name": "三重",
+    "win_summer": 12,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "海星",
+    "win_summer": 7,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "四日市",
+    "win_summer": 4,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "明野",
+    "win_summer": 2,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "いなべ総合",
+    "win_summer": 2,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "相可",
+    "win_summer": 2,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "四日市工",
+    "win_summer": 1,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "松阪商",
+    "win_summer": 1,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "津田学園",
+    "win_summer": 1,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "津商",
+    "win_summer": 1,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "桑名西",
+    "win_summer": 0,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "宇治山田商",
+    "win_summer": 0,
+    "pref_name": "三重県"
+  },
+  {
+    "school_name": "日大山形",
+    "win_summer": 12,
+    "pref_name": "山形県"
+  },
+  {
+    "school_name": "酒田南",
+    "win_summer": 4,
+    "pref_name": "山形県"
+  },
+  {
+    "school_name": "東海大山形",
+    "win_summer": 3,
+    "pref_name": "山形県"
+  },
+  {
+    "school_name": "山形中央",
+    "win_summer": 2,
+    "pref_name": "山形県"
+  },
+  {
+    "school_name": "鶴岡東",
+    "win_summer": 1,
+    "pref_name": "山形県"
+  },
+  {
+    "school_name": "酒田工",
+    "win_summer": 1,
+    "pref_name": "山形県"
+  },
+  {
+    "school_name": "羽黒",
+    "win_summer": 0,
+    "pref_name": "山形県"
+  },
+  {
+    "school_name": "宇部商",
+    "win_summer": 19,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "下関商",
+    "win_summer": 16,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "柳井",
+    "win_summer": 12,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "防府商工",
+    "win_summer": 4,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "岩国",
+    "win_summer": 4,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "早鞆",
+    "win_summer": 4,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "柳井商工",
+    "win_summer": 3,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "下関国際",
+    "win_summer": 3,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "西京",
+    "win_summer": 2,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "岩国商",
+    "win_summer": 2,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "宇部鴻城",
+    "win_summer": 2,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "南陽工",
+    "win_summer": 1,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "桜ケ丘",
+    "win_summer": 1,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "山口鴻城",
+    "win_summer": 1,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "豊浦",
+    "win_summer": 1,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "下関西",
+    "win_summer": 1,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "華陵",
+    "win_summer": 0,
+    "pref_name": "山口県"
+  },
+  {
+    "school_name": "東海大甲府",
+    "win_summer": 20,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "甲府工",
+    "win_summer": 6,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "市川",
+    "win_summer": 3,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "甲府商",
+    "win_summer": 3,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "日本航空",
+    "win_summer": 3,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "山梨学院",
+    "win_summer": 2,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "吉田",
+    "win_summer": 2,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "甲府一",
+    "win_summer": 1,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "日川",
+    "win_summer": 1,
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "日大明誠",
+    "win_summer": "-",
+    "pref_name": "山梨県"
+  },
+  {
+    "school_name": "近江",
+    "win_summer": 12,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "八幡商",
+    "win_summer": 6,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "比叡山",
+    "win_summer": 5,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "甲西",
+    "win_summer": 4,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "瀬田工",
+    "win_summer": 3,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "北大津",
+    "win_summer": 2,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "彦根東",
+    "win_summer": 1,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "長浜",
+    "win_summer": 1,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "滋賀学園",
+    "win_summer": 0,
+    "pref_name": "滋賀県"
+  },
+  {
+    "school_name": "樟南",
+    "win_summer": 24,
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "鹿児島実",
+    "win_summer": 18,
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "鹿児島商",
+    "win_summer": 14,
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "神村学園",
+    "win_summer": 3,
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "鹿児島工",
+    "win_summer": 3,
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "鹿児島玉龍",
+    "win_summer": 2,
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "出水商",
+    "win_summer": 1,
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "鹿屋中央",
+    "win_summer": 1,
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "尚志館",
+    "win_summer": "-",
+    "pref_name": "鹿児島県"
+  },
+  {
+    "school_name": "金足農",
+    "win_summer": 11,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "秋田商",
+    "win_summer": 10,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "秋田",
+    "win_summer": 9,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "明桜",
+    "win_summer": 6,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "秋田中央",
+    "win_summer": 3,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "秋田工",
+    "win_summer": 2,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "能代",
+    "win_summer": 2,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "能代松陽",
+    "win_summer": 2,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "大曲工",
+    "win_summer": 0,
+    "pref_name": "秋田県"
+  },
+  {
+    "school_name": "日本文理",
+    "win_summer": 9,
+    "pref_name": "新潟県"
+  },
+  {
+    "school_name": "新潟明訓",
+    "win_summer": 7,
+    "pref_name": "新潟県"
+  },
+  {
+    "school_name": "新発田農",
+    "win_summer": 3,
+    "pref_name": "新潟県"
+  },
+  {
+    "school_name": "新潟商",
+    "win_summer": 3,
+    "pref_name": "新潟県"
+  },
+  {
+    "school_name": "中越",
+    "win_summer": 2,
+    "pref_name": "新潟県"
+  },
+  {
+    "school_name": "新潟南",
+    "win_summer": 2,
+    "pref_name": "新潟県"
+  },
+  {
+    "school_name": "高田商",
+    "win_summer": 1,
+    "pref_name": "新潟県"
+  },
+  {
+    "school_name": "長岡",
+    "win_summer": 1,
+    "pref_name": "新潟県"
+  },
+  {
+    "school_name": "横浜",
+    "win_summer": 35,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "東海大相模",
+    "win_summer": 18,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "横浜商",
+    "win_summer": 15,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "慶応",
+    "win_summer": 14,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "法政二",
+    "win_summer": 14,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "桐蔭学園",
+    "win_summer": 12,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "桐光学園",
+    "win_summer": 7,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "湘南",
+    "win_summer": 4,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "横浜商大",
+    "win_summer": 4,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "日大藤沢",
+    "win_summer": 2,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "浅野",
+    "win_summer": 2,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "武相",
+    "win_summer": 2,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "神奈川商工",
+    "win_summer": 1,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "鶴見工",
+    "win_summer": 1,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "横浜隼人",
+    "win_summer": 1,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "平塚学園",
+    "win_summer": 1,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "藤沢翔陵",
+    "win_summer": 1,
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "鎌倉学園",
+    "win_summer": "-",
+    "pref_name": "神奈川県"
+  },
+  {
+    "school_name": "八戸学院光星",
+    "win_summer": 20,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "青森山田",
+    "win_summer": 12,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "三沢",
+    "win_summer": 5,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "東奥義塾",
+    "win_summer": 3,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "聖愛",
+    "win_summer": 2,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "八戸工大一",
+    "win_summer": 1,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "青森",
+    "win_summer": 1,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "弘前工",
+    "win_summer": 1,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "弘前実",
+    "win_summer": 1,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "八戸",
+    "win_summer": 0,
+    "pref_name": "青森県"
+  },
+  {
+    "school_name": "静岡",
+    "win_summer": 22,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "静岡商",
+    "win_summer": 17,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "浜松商",
+    "win_summer": 11,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "常葉大菊川",
+    "win_summer": 10,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "東海大静岡翔洋",
+    "win_summer": 8,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "島田商",
+    "win_summer": 5,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "韮山",
+    "win_summer": 2,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "浜松工",
+    "win_summer": 2,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "静岡学園",
+    "win_summer": 2,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "常葉大橘",
+    "win_summer": 2,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "掛川西",
+    "win_summer": 1,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "静清",
+    "win_summer": 1,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "浜松学院",
+    "win_summer": 1,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "清水東",
+    "win_summer": 1,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "浜松西",
+    "win_summer": 1,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "桐陽",
+    "win_summer": 1,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "清水商",
+    "win_summer": 0,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "日大三島",
+    "win_summer": 0,
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "富士宮北",
+    "win_summer": "-",
+    "pref_name": "静岡県"
+  },
+  {
+    "school_name": "星稜",
+    "win_summer": 19,
+    "pref_name": "石川県"
+  },
+  {
+    "school_name": "金沢",
+    "win_summer": 7,
+    "pref_name": "石川県"
+  },
+  {
+    "school_name": "遊学館",
+    "win_summer": 6,
+    "pref_name": "石川県"
+  },
+  {
+    "school_name": "日本航空石川",
+    "win_summer": 2,
+    "pref_name": "石川県"
+  },
+  {
+    "school_name": "金沢泉丘",
+    "win_summer": 1,
+    "pref_name": "石川県"
+  },
+  {
+    "school_name": "金沢桜丘",
+    "win_summer": 1,
+    "pref_name": "石川県"
+  },
+  {
+    "school_name": "石川師範",
+    "win_summer": 1,
+    "pref_name": "石川県"
+  },
+  {
+    "school_name": "銚子商",
+    "win_summer": 25,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "習志野",
+    "win_summer": 19,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "成田",
+    "win_summer": 10,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "木更津総合",
+    "win_summer": 8,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "市船橋",
+    "win_summer": 7,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "拓大紅陵",
+    "win_summer": 6,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "千葉経大付",
+    "win_summer": 5,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "東海大浦安",
+    "win_summer": 4,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "千葉商",
+    "win_summer": 3,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "柏陵",
+    "win_summer": 3,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "我孫子",
+    "win_summer": 2,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "県千葉",
+    "win_summer": 2,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "印旛明誠",
+    "win_summer": 1,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "成東",
+    "win_summer": 1,
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "安房",
+    "win_summer": "-",
+    "pref_name": "千葉県"
+  },
+  {
+    "school_name": "PL学園",
+    "win_summer": 48,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "大阪桐蔭",
+    "win_summer": 35,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "大体大浪商",
+    "win_summer": 17,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "市岡",
+    "win_summer": 11,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "明星",
+    "win_summer": 10,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "関大北陽",
+    "win_summer": 7,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "八尾",
+    "win_summer": 7,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "興国",
+    "win_summer": 7,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "阪南大",
+    "win_summer": 4,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "上宮",
+    "win_summer": 3,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "履正社",
+    "win_summer": 3,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "関大一",
+    "win_summer": 3,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "芦間",
+    "win_summer": 3,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "近大付",
+    "win_summer": 2,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "泉陽",
+    "win_summer": 2,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "都島工",
+    "win_summer": 2,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "北野",
+    "win_summer": 1,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "寝屋川",
+    "win_summer": 1,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "日新",
+    "win_summer": 1,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "大阪偕星",
+    "win_summer": 1,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "春日丘",
+    "win_summer": 1,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "東大阪大柏原",
+    "win_summer": 1,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "近大泉州",
+    "win_summer": 0,
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "関西創価",
+    "win_summer": "-",
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "浪速",
+    "win_summer": "-",
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "大阪学院大",
+    "win_summer": "-",
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "扇町総合",
+    "win_summer": "-",
+    "pref_name": "大阪府"
+  },
+  {
+    "school_name": "津久見",
+    "win_summer": 16,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "大分商",
+    "win_summer": 12,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "明豊",
+    "win_summer": 9,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "柳ケ浦",
+    "win_summer": 7,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "日田林工",
+    "win_summer": 4,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "佐伯鶴城",
+    "win_summer": 3,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "楊志館",
+    "win_summer": 2,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "中津東",
+    "win_summer": 1,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "別府商",
+    "win_summer": 1,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "別府鶴見丘",
+    "win_summer": 1,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "鶴崎工",
+    "win_summer": 1,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "臼杵",
+    "win_summer": 1,
+    "pref_name": "大分県"
+  },
+  {
+    "school_name": "海星",
+    "win_summer": 10,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "長崎日大",
+    "win_summer": 10,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "清峰",
+    "win_summer": 4,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "長崎商",
+    "win_summer": 3,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "長崎北陽台",
+    "win_summer": 3,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "佐世保工",
+    "win_summer": 2,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "佐世保実",
+    "win_summer": 2,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "波佐見",
+    "win_summer": 2,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "創成館",
+    "win_summer": 1,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "長崎南山",
+    "win_summer": 0,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "長崎西",
+    "win_summer": 0,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "諫早",
+    "win_summer": 0,
+    "pref_name": "長崎県"
+  },
+  {
+    "school_name": "松商学園",
+    "win_summer": 26,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "長野商",
+    "win_summer": 7,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "佐久長聖",
+    "win_summer": 7,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "岡谷工",
+    "win_summer": 4,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "丸子修学館",
+    "win_summer": 3,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "長野師範",
+    "win_summer": 3,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "長野日大",
+    "win_summer": 2,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "伊那北",
+    "win_summer": 2,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "松本美須々ケ丘",
+    "win_summer": 2,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "松本国際",
+    "win_summer": 1,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "上田",
+    "win_summer": 1,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "上田西",
+    "win_summer": 1,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "松代",
+    "win_summer": 1,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "飯田OIDE長姫",
+    "win_summer": 0,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "東海大諏訪",
+    "win_summer": 0,
+    "pref_name": "長野県"
+  },
+  {
+    "school_name": "鳥取西",
+    "win_summer": 23,
+    "pref_name": "鳥取県"
+  },
+  {
+    "school_name": "米子東",
+    "win_summer": 8,
+    "pref_name": "鳥取県"
+  },
+  {
+    "school_name": "八頭",
+    "win_summer": 3,
+    "pref_name": "鳥取県"
+  },
+  {
+    "school_name": "倉吉北",
+    "win_summer": 1,
+    "pref_name": "鳥取県"
+  },
+  {
+    "school_name": "境",
+    "win_summer": 1,
+    "pref_name": "鳥取県"
+  },
+  {
+    "school_name": "鳥取城北",
+    "win_summer": 1,
+    "pref_name": "鳥取県"
+  },
+  {
+    "school_name": "米子松蔭",
+    "win_summer": 1,
+    "pref_name": "鳥取県"
+  },
+  {
+    "school_name": "倉吉東",
+    "win_summer": 0,
+    "pref_name": "鳥取県"
+  },
+  {
+    "school_name": "浜田",
+    "win_summer": 7,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "石見智翠館",
+    "win_summer": 5,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "大社",
+    "win_summer": 4,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "立正大淞南",
+    "win_summer": 3,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "松江北",
+    "win_summer": 3,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "松江商",
+    "win_summer": 2,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "開星",
+    "win_summer": 2,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "江津工",
+    "win_summer": 1,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "浜田商",
+    "win_summer": 1,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "益田",
+    "win_summer": 1,
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "松江東",
+    "win_summer": "-",
+    "pref_name": "島根県"
+  },
+  {
+    "school_name": "早稲田実",
+    "win_summer": 43,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "帝京",
+    "win_summer": 30,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "日大三",
+    "win_summer": 27,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "関東一",
+    "win_summer": 11,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "桜美林",
+    "win_summer": 8,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "修徳",
+    "win_summer": 6,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "創価",
+    "win_summer": 5,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "東亜学園",
+    "win_summer": 5,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "明治",
+    "win_summer": 4,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "日大一",
+    "win_summer": 4,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "城西",
+    "win_summer": 4,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "東海大菅生",
+    "win_summer": 4,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "日大二",
+    "win_summer": 4,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "二松学舎大付",
+    "win_summer": 3,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "堀越",
+    "win_summer": 2,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "法政",
+    "win_summer": 2,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "筑波大付",
+    "win_summer": 2,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "日大鶴ケ丘",
+    "win_summer": 2,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "国士舘",
+    "win_summer": 1,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "日大豊山",
+    "win_summer": 1,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "慶応二",
+    "win_summer": 1,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "岩倉",
+    "win_summer": 0,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "日大桜丘",
+    "win_summer": 0,
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "駒大",
+    "win_summer": "-",
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "世田谷学園",
+    "win_summer": "-",
+    "pref_name": "東京都"
+  },
+  {
+    "school_name": "徳島商",
+    "win_summer": 21,
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "池田",
+    "win_summer": 20,
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "鳴門",
+    "win_summer": 12,
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "鳴門工",
+    "win_summer": 8,
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "新野",
+    "win_summer": 2,
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "小松島",
+    "win_summer": 1,
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "小松島西",
+    "win_summer": 1,
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "海部",
+    "win_summer": "-",
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "城南",
+    "win_summer": "-",
+    "pref_name": "徳島県"
+  },
+  {
+    "school_name": "作新学院",
+    "win_summer": 25,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "文星芸大付",
+    "win_summer": 10,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "宇都宮工",
+    "win_summer": 8,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "佐野日大",
+    "win_summer": 4,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "宇都宮南",
+    "win_summer": 3,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "小山",
+    "win_summer": 2,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "白鴎大足利",
+    "win_summer": 1,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "足利工",
+    "win_summer": 1,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "宇都宮",
+    "win_summer": 1,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "小山西",
+    "win_summer": 1,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "栃木",
+    "win_summer": 1,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "国学院栃木",
+    "win_summer": 0,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "宇都宮商",
+    "win_summer": 0,
+    "pref_name": "栃木県"
+  },
+  {
+    "school_name": "天理",
+    "win_summer": 48,
+    "pref_name": "奈良県"
+  },
+  {
+    "school_name": "智弁学園",
+    "win_summer": 21,
+    "pref_name": "奈良県"
+  },
+  {
+    "school_name": "郡山",
+    "win_summer": 8,
+    "pref_name": "奈良県"
+  },
+  {
+    "school_name": "高田商",
+    "win_summer": 3,
+    "pref_name": "奈良県"
+  },
+  {
+    "school_name": "御所実",
+    "win_summer": 1,
+    "pref_name": "奈良県"
+  },
+  {
+    "school_name": "奈良大付",
+    "win_summer": 1,
+    "pref_name": "奈良県"
+  },
+  {
+    "school_name": "高田",
+    "win_summer": "-",
+    "pref_name": "奈良県"
+  },
+  {
+    "school_name": "法隆寺国際",
+    "win_summer": "-",
+    "pref_name": "奈良県"
+  },
+  {
+    "school_name": "高岡商",
+    "win_summer": 9,
+    "pref_name": "富山県"
+  },
+  {
+    "school_name": "富山商",
+    "win_summer": 8,
+    "pref_name": "富山県"
+  },
+  {
+    "school_name": "魚津",
+    "win_summer": 3,
+    "pref_name": "富山県"
+  },
+  {
+    "school_name": "富山第一",
+    "win_summer": 3,
+    "pref_name": "富山県"
+  },
+  {
+    "school_name": "新湊",
+    "win_summer": 2,
+    "pref_name": "富山県"
+  },
+  {
+    "school_name": "富山北部",
+    "win_summer": 2,
+    "pref_name": "富山県"
+  },
+  {
+    "school_name": "滑川",
+    "win_summer": 1,
+    "pref_name": "富山県"
+  },
+  {
+    "school_name": "福井商",
+    "win_summer": 19,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "敦賀気比",
+    "win_summer": 12,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "敦賀",
+    "win_summer": 9,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "福井工大福井",
+    "win_summer": 4,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "若狭",
+    "win_summer": 4,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "北陸",
+    "win_summer": 3,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "三国",
+    "win_summer": 1,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "美方",
+    "win_summer": 1,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "大野",
+    "win_summer": 0,
+    "pref_name": "福井県"
+  },
+  {
+    "school_name": "小倉",
+    "win_summer": 15,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "柳川",
+    "win_summer": 10,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "久留米商",
+    "win_summer": 9,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "西日本短大付",
+    "win_summer": 9,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "小倉工",
+    "win_summer": 8,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "福岡第一",
+    "win_summer": 6,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "九州国際大付",
+    "win_summer": 5,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "福岡大大濠",
+    "win_summer": 5,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "三池工",
+    "win_summer": 5,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "東筑",
+    "win_summer": 3,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "戸畑",
+    "win_summer": 3,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "福岡工大城東",
+    "win_summer": 2,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "福岡工",
+    "win_summer": 2,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "豊国学園",
+    "win_summer": 2,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "飯塚商",
+    "win_summer": 2,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "東福岡",
+    "win_summer": 1,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "九産大九州",
+    "win_summer": 1,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "沖学園",
+    "win_summer": 1,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "筑紫台",
+    "win_summer": 1,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "八女",
+    "win_summer": 1,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "飯塚",
+    "win_summer": 1,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "自由ケ丘",
+    "win_summer": 0,
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "博多工",
+    "win_summer": "-",
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "東海大福岡",
+    "win_summer": "-",
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "小倉東",
+    "win_summer": "-",
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "東筑紫学園",
+    "win_summer": "-",
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "小倉商",
+    "win_summer": "-",
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "八幡",
+    "win_summer": "-",
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "北九州市立",
+    "win_summer": "-",
+    "pref_name": "福岡県"
+  },
+  {
+    "school_name": "聖光学院",
+    "win_summer": 19,
+    "pref_name": "福島県"
+  },
+  {
+    "school_name": "磐城",
+    "win_summer": 7,
+    "pref_name": "福島県"
+  },
+  {
+    "school_name": "学法石川",
+    "win_summer": 3,
+    "pref_name": "福島県"
+  },
+  {
+    "school_name": "福島商",
+    "win_summer": 2,
+    "pref_name": "福島県"
+  },
+  {
+    "school_name": "双葉",
+    "win_summer": 2,
+    "pref_name": "福島県"
+  },
+  {
+    "school_name": "郡山北工",
+    "win_summer": 1,
+    "pref_name": "福島県"
+  },
+  {
+    "school_name": "日大東北",
+    "win_summer": 1,
+    "pref_name": "福島県"
+  },
+  {
+    "school_name": "福島北",
+    "win_summer": "-",
+    "pref_name": "福島県"
+  },
+  {
+    "school_name": "報徳学園",
+    "win_summer": 28,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "東洋大姫路",
+    "win_summer": 20,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "育英",
+    "win_summer": 17,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "明石",
+    "win_summer": 9,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "県芦屋",
+    "win_summer": 9,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "甲陽学院",
+    "win_summer": 9,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "関西学院",
+    "win_summer": 9,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "滝川",
+    "win_summer": 8,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "神港橘",
+    "win_summer": 6,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "滝川二",
+    "win_summer": 6,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "神戸",
+    "win_summer": 4,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "神戸商",
+    "win_summer": 3,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "神港学園",
+    "win_summer": 2,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "姫路南",
+    "win_summer": 2,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "神戸国際大付",
+    "win_summer": 1,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "神戸弘陵",
+    "win_summer": 1,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "市尼崎",
+    "win_summer": 1,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "西脇工",
+    "win_summer": 1,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "明石南",
+    "win_summer": 1,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "県尼崎",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "尼崎北",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "洲本",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "市西宮",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "加古川北",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "姫路工",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "明石商",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "兵庫商",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "兵庫",
+    "win_summer": 0,
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "鳴尾",
+    "win_summer": "-",
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "三田学園",
+    "win_summer": "-",
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "社",
+    "win_summer": "-",
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "尼崎西",
+    "win_summer": "-",
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "川西緑台",
+    "win_summer": "-",
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "市川",
+    "win_summer": "-",
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "兵庫工",
+    "win_summer": "-",
+    "pref_name": "兵庫県"
+  },
+  {
+    "school_name": "北海",
+    "win_summer": 21,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "駒大苫小牧",
+    "win_summer": 14,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "旭川実",
+    "win_summer": 5,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "旭川大",
+    "win_summer": 4,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "旭川龍谷",
+    "win_summer": 4,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "函館工",
+    "win_summer": 4,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "東海大札幌",
+    "win_summer": 3,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "北海学園札幌",
+    "win_summer": 3,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "駒大岩見沢",
+    "win_summer": 2,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "函館西",
+    "win_summer": 2,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "函館大有斗",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "苫小牧工",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "帯広三条",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "帯広柏葉",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "白樺学園",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "砂川",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "函館商",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "函館中部",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "札幌第一",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "札幌南",
+    "win_summer": 1,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "北照",
+    "win_summer": 0,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "苫小牧東",
+    "win_summer": 0,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "北海道栄",
+    "win_summer": 0,
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "鵡川",
+    "win_summer": "-",
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "遠軽",
+    "win_summer": "-",
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "室蘭工",
+    "win_summer": "-",
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "釧路一",
+    "win_summer": "-",
+    "pref_name": "北海道"
+  },
+  {
+    "school_name": "智弁和歌山",
+    "win_summer": 36,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "桐蔭",
+    "win_summer": 32,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "向陽",
+    "win_summer": 14,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "箕島",
+    "win_summer": 13,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "海南",
+    "win_summer": 5,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "市和歌山",
+    "win_summer": 5,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "新宮",
+    "win_summer": 5,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "和歌山商",
+    "win_summer": 4,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "和歌山工",
+    "win_summer": 3,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "星林",
+    "win_summer": 2,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "南部",
+    "win_summer": 1,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "田辺",
+    "win_summer": 0,
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "紀央館",
+    "win_summer": "-",
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "伊都",
+    "win_summer": "-",
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "大成",
+    "win_summer": "-",
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "日高",
+    "win_summer": "-",
+    "pref_name": "和歌山県"
+  },
+  {
+    "school_name": "大連商",
+    "win_summer": 12,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "嘉義農林",
+    "win_summer": 5,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "台北一中",
+    "win_summer": 3,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "京城中",
+    "win_summer": 2,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "釜山中",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "釜山商",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "微文高普",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "大邱商",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "仁川商",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "京城商",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "嘉義中",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "台北商",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  },
+  {
+    "school_name": "台北工",
+    "win_summer": 1,
+    "pref_name": "#N/A"
+  }
+]
+
+};

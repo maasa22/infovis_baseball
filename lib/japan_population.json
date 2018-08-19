@@ -1,0 +1,192 @@
+JapanPopulationData =
+{ "Country": "日本", "Data":
+[
+  {
+    "Prefecture": "大阪府",
+    "win_summer": 170
+  },
+  {
+    "Prefecture": "兵庫県",
+    "win_summer": 137
+  },
+  {
+    "Prefecture": "東京都",
+    "win_summer": 177
+  },
+  {
+    "Prefecture": "愛知県",
+    "win_summer": 130
+  },
+  {
+    "Prefecture": "和歌山県",
+    "win_summer": 120
+  },
+  {
+    "Prefecture": "広島県",
+    "win_summer": 119
+  },
+  {
+    "Prefecture": "神奈川県",
+    "win_summer": 126
+  },
+  {
+    "Prefecture": "京都府",
+    "win_summer": 120
+  },
+  {
+    "Prefecture": "愛媛県",
+    "win_summer": 121
+  },
+  {
+    "Prefecture": "高知県",
+    "win_summer": 94
+  },
+  {
+    "Prefecture": "福岡県",
+    "win_summer": 92
+  },
+  {
+    "Prefecture": "静岡県",
+    "win_summer": 87
+  },
+  {
+    "Prefecture": "岐阜県",
+    "win_summer": 72
+  },
+  {
+    "Prefecture": "徳島県",
+    "win_summer": 65
+  },
+  {
+    "Prefecture": "奈良県",
+    "win_summer": 82
+  },
+  {
+    "Prefecture": "千葉県",
+    "win_summer": 96
+  },
+  {
+    "Prefecture": "香川県",
+    "win_summer": 67
+  },
+  {
+    "Prefecture": "北海道",
+    "win_summer": 72
+  },
+  {
+    "Prefecture": "埼玉県",
+    "win_summer": 70
+  },
+  {
+    "Prefecture": "山口県",
+    "win_summer": 76
+  },
+  {
+    "Prefecture": "岡山県",
+    "win_summer": 63
+  },
+  {
+    "Prefecture": "群馬県",
+    "win_summer": 70
+  },
+  {
+    "Prefecture": "熊本県",
+    "win_summer": 63
+  },
+  {
+    "Prefecture": "宮城県",
+    "win_summer": 69
+  },
+  {
+    "Prefecture": "栃木県",
+    "win_summer": 57
+  },
+  {
+    "Prefecture": "沖縄県",
+    "win_summer": 70
+  },
+  {
+    "Prefecture": "鹿児島県",
+    "win_summer": 66
+  },
+  {
+    "Prefecture": "福井県",
+    "win_summer": 53
+  },
+  {
+    "Prefecture": "長野県",
+    "win_summer": 60
+  },
+  {
+    "Prefecture": "茨城県",
+    "win_summer": 53
+  },
+  {
+    "Prefecture": "大分県",
+    "win_summer": 58
+  },
+  {
+    "Prefecture": "宮崎県",
+    "win_summer": 53
+  },
+  {
+    "Prefecture": "山梨県",
+    "win_summer": 41
+  },
+  {
+    "Prefecture": "長崎県",
+    "win_summer": 37
+  },
+  {
+    "Prefecture": "三重県",
+    "win_summer": 33
+  },
+  {
+    "Prefecture": "青森県",
+    "win_summer": 46
+  },
+  {
+    "Prefecture": "秋田県",
+    "win_summer": 45
+  },
+  {
+    "Prefecture": "鳥取県",
+    "win_summer": 38
+  },
+  {
+    "Prefecture": "石川県",
+    "win_summer": 37
+  },
+  {
+    "Prefecture": "岩手県",
+    "win_summer": 39
+  },
+  {
+    "Prefecture": "滋賀県",
+    "win_summer": 34
+  },
+  {
+    "Prefecture": "福島県",
+    "win_summer": 35
+  },
+  {
+    "Prefecture": "佐賀県",
+    "win_summer": 38
+  },
+  {
+    "Prefecture": "島根県",
+    "win_summer": 29
+  },
+  {
+    "Prefecture": "富山県",
+    "win_summer": 28
+  },
+  {
+    "Prefecture": "山形県",
+    "win_summer": 23
+  },
+  {
+    "Prefecture": "新潟県",
+    "win_summer": 28
+  }
+]};

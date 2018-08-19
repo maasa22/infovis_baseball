@@ -1,0 +1,53 @@
+/*body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial,Meiryo;
+  text-align: center;
+}*/
+
+body {
+	background-color: #1A1A1A;
+	}
+
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#header {
+  width: 100%;
+}
+
+#header .box1{
+  display: inline-block;
+  width: 400px;
+}
+
+
+/*#header .legend_c{
+  display:inline-block;
+  width: 66%;
+}
+
+#header .legend_p{
+  display: inline-block;
+  dispaly: flex;
+  width: 33%;
+}*/
+
+#Wrapper {
+  display: flex;
+  height: 800px;
+}
+
+#Wrapper #contents {
+  width: 500px;
+}
+
+
+#mouse {
+  height: 100px;
+  width: 100%;
+}
