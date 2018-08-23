@@ -3,7 +3,7 @@ JapanPopulationData =
 [
   {
     "Prefecture": "大阪府",
-    "win_summer": 170,
+    "win_summer": 172,
     "team_100": "大阪桐蔭, 近大付"
   },
   {
@@ -183,7 +183,7 @@ JapanPopulationData =
   },
   {
     "Prefecture": "秋田県",
-    "win_summer": 45,
+    "win_summer": 46,
     "team_100": "金足農"
   },
   {

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>高校野球都道府県別勝利数</title>
+        <title>高校野球都道府県別勝利数 d3.jsで可視化してみた</title>
         <script src="./lib/d3.js" charset="utf-8"></script>
         <script src="./lib/topojson.js" charset="utf-8"></script>
         <script src="./lib/japan_population.json" charset="utf-8"></script>
@@ -17,21 +17,23 @@
 
           gtag('config', 'UA-124241907-1');
         </script>
-        <meta name="description" content="高校野球夏の大会の都道府県別勝利数をマッピングしています。都道府県ごとの勝利数の多い上位高校と第100大会の参加校も見ることができます。日本地図の上をマウスでなぞると各都道府県の情報を見れる動的なページをd3.jsを用いて作りました。">
-        <meta name="google-site-verification" content="sQAZmSLxqcJqIEDUerbNXkJcROcOt-r66GGpGgs86BM" />
+        <meta name="description" content="高校野球夏の大会の都道府県別勝利数をd3.jsでマッピングしています。都道府県ごとの勝利数の多い上位高校と第100大会の参加校も見ることができます。日本地図の上をマウスでなぞると各都道府県の情報を見れる動的なページをd3.jsを用いて作りました。">
     </head>
 
 
 <body>
 
 <section class="hero">
-    <div class="hero-body">
+    <div class="hero-body" style="background-color: #eeeeee;">
         <div class="container ">
             <h1 class="title">
-                夏の甲子園 高校野球都道府県別勝利数
+                <!-- 夏の甲子園 高校野球都道府県別勝利数 -->
+                高校野球都道府県別勝利数 --d3.js--
             </h1>
             <h3 class="subtitle">
-                高校野球夏の大会の都道府県別勝利数をマッピングしています。<br>勝利数が多い都道府県ほど、濃い色で表示されます。<br>
+                高校野球夏の大会の都道府県別勝利数をd3.jsでマッピングしています。<br>
+                勝利数が多い都道府県ほど、濃い色で表示されます。<br>
+                また地図上の都道府県をクリックすると、勝利数上位5校が表示されます。<br>
             </h2>
             <p>
 
@@ -53,7 +55,9 @@ var color = d3.scaleLinear()
 var svg = d3.select("body")
             .append("svg")
             .attr("width", width)
-            .attr("height", height);
+            .attr("height", height)
+            // .attr("background-color", #eeeeee)
+            ;
 
 var populationHash = {};
 var populationHash2 = {};
@@ -232,14 +236,43 @@ pref_details_school6.text("第100会大会: 報徳学園, 明石商")
 
 </script>
 
+<!-- 解説コメント 人口比など-->
+<section class="hero">
+    <div class="hero-body" style="background-color: #eeeeee;">
+        <div class="container ">
+            <h4 class="subtitle">
+                見つけた関連サイト
+            </h4>
+            <p>
+              他にd3.jsで高校野球のデータを可視化されているサイト。<br>
+              次回作の参考としたいので、自分への備忘録を兼ねてリンクを貼っておく。<br>
+              <!-- <a href="http://webforest.webcrow.jp/high_school_baseball/">高校野球の優勝回数を県別にまとめてみた-県別甲子園優勝回数</a><br>
+              <a href="https://bl.ocks.org/ko31/56cc872589f80ae07c402e35433c9cde">第100回全国高校野球選手権記念大会の出場校の野球部員数をバブルチャートで可視化</a><br>
+              <a href="https://ko31.github.io/2018koshien_birthplace_d3/">2018夏の甲子園出場校選手の出身都道府県</a><br> -->
+              <ul>
+                <li>
+                  <a href="http://webforest.webcrow.jp/high_school_baseball/">県別の優勝回数</a><br>
+                </li>
+                <li>
+                  <a href="https://bl.ocks.org/ko31/56cc872589f80ae07c402e35433c9cde">代表校毎の野球部員数(バブルチャート)</a><br>
+                </li>
+                <li>
+                  <a href="https://ko31.github.io/2018koshien_birthplace_d3/">出場選手の出身都道府県</a><br>
+                </li>
+              </ul>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 制作方法 -->
 <footer class="footer">
    <div class="container">
-       <div class="content has-text-centered">
+       <div class="content has-text-centered" style="background-color: #eeeeee;">
            <p>
-               このマップはD3.jsを用いたデータ可視化の検証を目的に作成しており、データの正確性は保証しません。<br>
                <!-- firefox推奨。chromeやsafariは稀に表示が崩れます。<br> -->
-               <a href="https://hsbb.tsh.jp/" target="_blank">HSBB高校野球データベース</a>のデータを使用させて頂きました。 2018/8/17 <br>
-               twitter <a href="https://twitter.com/WeatherBot22" target="_blank">@WeatherBot22</a>
+               <a href="https://hsbb.tsh.jp/" target="_blank">HSBB高校野球データベース</a>のデータを使用させて頂きました。 2018/8/22 (第100回大会終了時) <br>
+               ご意見等は twitter<a href="https://twitter.com/WeatherBot22" target="_blank">@WeatherBot22</a> まで。
            </p>
        </div>
    </div>
