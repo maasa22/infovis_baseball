@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>プロ野球チームスタイルの変遷</title>
+  <script type="text/javascript" src="./lib/d3.js"></script>
+  <link rel="stylesheet" type="text/css" href="./lib/style.css">
+</head>
+<body>
+  <div id="header">
+  </div>
+  <div id="contents">
+  </div>
+
+
+  <script type="text/javascript">
+  //
+  // based on Hans Rosling's presentation and Mike Bostock's D3 example
+  // http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen
+  // http://bost.ocks.org/mike/nations/
+  //
+  // bookmark
+  //http://yatani.jp/teaching/slides/2016infovis/tutorial-02.pdf
+  //file:///Users/mackey/Documents/report/infovis/scatter_plot.html
+  //http://yatani.jp/teaching/doku.php?id=2016infovislab:start
+
+  var width = 1180;
+  var height = 500;
+  var offset = 40;
+  var currentYear = 1951;
+  //var color = d3.scale.category10();
+  //var color = d3.scaleOrdinal(d3.schemeCategory20);
+  //var colorList = ["#ffe100", "#111c3c", "#002468", "#ff0000",  "#044a90", "#f27b00", "#9e751f", "#ffcc00", "#00508f", "#cccccc", "#131742","#940010"];
+  //阪、ヤ、中、広、横、巨、オ1、ソ、日、ロ、西、楽
+  //var color = d3.scaleOrdinal().domain([1,12]).range(colorList);
+
+  var homerunScale = d3.scaleLinear().domain([0, 260]).range([0,width]); //giants 2004 259
+  var stealScale = d3.scaleLinear().domain([0,280]).range([height,0]); //olix 1956 277
+
+  var populationScale = d3.scaleSqrt().domain([0,1e9]).range([1,50]);
+
+  var homerunAxis = d3.axisBottom(homerunScale)
+  .ticks(5,d3.format(",d"))
+  //目盛の個数
+  var stealAxis = d3.axisLeft(stealScale);
+  var line = d3.line()
+  .x(function(d) {return d[0];})
+  .y(function(d) {return d[1];});
+
+  var svg_header = d3.select("#header").append("svg")
+  .attr("width",width/3)
+  .attr("height",height/20 + 2*offset)
+  .attr("transform", "translate(" + offset + ", "+offset + ")");
+
+  var svg_happening = d3.select("#header").append("svg")
+  .attr("width",2*width/3)
+  .attr("height",height/20 + 2*offset)
+  .attr("transform", "translate(" + offset + ", "+offset + ")");
+
+  var svg_contents = d3.select("#contents").append("svg")
+  .attr("width",width + 2*offset)
+  .attr("height",height + 2*offset)
+  .attr("transform", "translate(" + offset + ", "+offset + ")");
+
+  svg_contents.append("g")
+  .attr("class","homerunAxis")
+  // .attr("fill","white")
+  .attr("stroke","#B3B3B3")
+  .attr("shape-rendering","crispEdges")
+  //.attr("transform","translate(0, "+height/2 +")")
+  .attr("transform","translate(0, "+height +")")
+  .call(homerunAxis);
+
+  svg_contents.append("g")
+  .attr("class","stealAxis")
+  //.attr("fill","none")
+  // .attr("fill","red")
+  .attr("stroke","#B3B3B3")
+  .attr("shape-rendering","crispEdges")
+  //.attr("transform","translate(" + width/2 +",0)")
+  .attr("transform","translate(" + 0 +",0)")
+  .call(stealAxis);
+
+  svg_contents.append("path")  // パスを追加
+  .attr("class","homerunAxis_average")
+  .attr("d", line([[0,2*height/3 ], [width, 2*height/3]]))   // 配列の座標を渡してpath要素のd属性に設定
+  .attr("stroke", "#B3B3B3")    // 線の色を#B3B3B3にする
+  .attr("stroke-dasharray", "5, 2")   // 点線の実線と間隔を交互に指定
+  .attr("fill", "none")
+
+  svg_contents.append("path")  // パスを追加
+  .attr("class","homerunAxis_average")
+  .attr("d", line([[2*width/5,0 ], [2*width/5, height]]))   // 配列の座標を渡してpath要素のd属性に設定
+  .attr("stroke", "#B3B3B3")    // 線の色を#B3B3B3にする
+  .attr("stroke-dasharray", "5, 2")   // 点線の実線と間隔を交互に指定
+  .attr("fill", "none")
+
+
+  svg_contents.selectAll("g").selectAll("text") //軸の数字!?
+  //.attr("fill","black")
+  .attr("fill","#B3B3B3")
+  .attr("stroke","none");
+
+  svg_contents.append("text")
+  .attr("class","incomeLabel")
+  .attr("fill","white")
+  .attr("text-anchor","end")
+  .attr("x",width)
+  .attr("y",height -10)
+  .text("チーム本塁打数");
+
+  svg_contents.append("text")
+  .attr("class","lifeLabel")
+  .attr("fill","white")
+  .attr("text-anchor","start")
+  .attr("x", -20)
+  .attr("y",-20)
+  //.attr("y",width/2 -30)
+  //.attr("transform","rotate(-90)")
+  .text("チーム盗塁数");
+
+  var yearLabel = svg_header.append("text")
+  .attr("class", "yearLabel")
+  .attr("fill","white")
+  .attr("text-anchor","start")
+  .attr("font-size",120)
+  .attr("x",-30)
+  .attr("y",60)
+  .text(currentYear);
+
+  //出来事を入れる領域、年々の出来事の記述をどうやって表示しようか
+  var happening = svg_happening.append("text")
+  .attr("class","happening")
+  .attr("fill","white")
+  .attr("text-anchor","start")
+  .attr("font-size",30)
+  .attr("x",0)
+  .attr("y",30);
+
+  var div_rect = svg_contents.append("rect")
+  .attr("class", "tooltip")
+  .attr("text-anchor","end")
+  .attr("x",0)
+  .attr("y",-10)
+  .attr("width",140)
+  .attr("height",100)
+  .style("opacity", 0)
+  .style("fill","#666666");
+
+  var div_legend = svg_contents.append("rect")
+  .attr("class", "tooltip")
+  .attr("text-anchor","end")
+  .attr("x",800)
+  .attr("y",-60)
+  .attr("width",430)
+  .attr("height",200)
+  //.style("opacity", 0)
+  .style("fill","#666666");
+
+
+  //mouseoverした時に表示される球団名、盗塁数、本塁打数
+  var div1 = svg_contents.append("text")
+  .attr("class", "tooltip")
+  .attr("fill","white")
+  .attr("text-anchor","start")
+  .attr("x",10)
+  .attr("y",10)
+  .style("opacity", 0)
+  .style("font-size", "18px");
+  var div2 = svg_contents.append("text")
+  .attr("class", "tooltip")
+  .attr("fill","white")
+  .attr("text-anchor","start")
+  .attr("x",10)
+  .attr("y",10 +20)
+  .style("opacity", 0);
+  var div3 = svg_contents.append("text")
+  .attr("class", "tooltip")
+  .attr("fill","white")
+  .attr("text-anchor","start")
+  .attr("x",10)
+  .attr("y",10 +40)
+  .style("opacity", 0);
+  var div4 = svg_contents.append("text")
+  .attr("class", "tooltip")
+  .attr("fill","white")
+  .attr("text-anchor","start")
+  .attr("x",10)
+  .attr("y",10 +60)
+  .style("opacity", 0);
+
+  div1.transition()
+  .duration(500)
+  .style("opacity", 1.0);
+  div2.transition()
+  .duration(500)
+  .style("opacity", 1.0);
+  div3.transition()
+  .duration(500)
+  .style("opacity", 1.0);
+  div4.transition()
+  .duration(500)
+  .style("opacity", 1.0);
+
+  events = {
+    "1950": "2リーグ制開始",
+    "1951": "本塁打王：青田(巨)32本、大下(日)26本",
+    "1952": "本塁打王：杉山(巨)27本、深見(日)25本",
+    "1953": "本塁打王：藤村(阪)27本、中西(西)36本",
+    "1954": "近鉄(※現楽天)、ピストル打線",
+    "1955": "横浜、歴代最低勝率.238",
+    "1956": "河野旭輝(オ)、シーズン85盗塁の日本新記録(当時)",
+    "1957": "西武、流線型打線",
+    "1958": "近鉄(※現楽天)、歴代最低勝率.238",
+    //南海、400フィート打線
+    "1959": "本塁打王：森(中)・桑田(横)31本、山内(ロ)25本",
+    "1960": "日本ハム、ミサイル打線",//
+    "1961": "本塁打王：長嶋(巨)28本、野村(ソ)・中田(オ)29本",
+    "1962": "王貞治(巨)、初の本塁打王、以後11年連続本塁打王",
+    "1963": "野村克也(ソ)、シーズン54本塁打の日本新記録(当時)",
+    "1964": "王貞治(巨)、シーズン55本塁打の日本新記録(当時)",
+    "1965": "野村克也(ソ)、三冠王",
+    "1966": "本塁打王：王(巨)48本、野村(日)34本",
+    "1967": "本塁打王：王(巨)47本、野村(日)35本",
+    "1968": "本塁打王：王(巨)49本、野村(日)38本",
+    "1969": "巨人、日本シリーズ５連覇達成",
+    "1970": "福本豊(オ)、初の盗塁王、以後13年連続盗塁王",
+    "1971": "ロッテ、新ミサイル打線",
+    "1972": "福本豊(オ)、シーズン106盗塁の日本新記録(現在)",
+    "1973": "巨人V9達成",
+    "1974": "王貞治(巨)、２年連続３冠王",
+    "1975": "広島、赤ヘル打線１",
+    "1976": "本塁打王：王(巨)49本、ジョーンズ(楽)36本",
+    "1977": "王貞治(巨)、世界新記録の756号ホームラン",
+    "1978": "広島、赤ヘル打線２",
+    "1979": "「飛ぶボール」(1978～1980)",
+    "1980": "近鉄(※現楽天)、パリーグ歴代最多239本塁打",
+    "1981": "本塁打王：山本(広)43本、門田(ソ)・ソレイタ(日)44本",
+    "1982": "落合博満(ロ)、三冠王",
+    "1983": "福本豊(オ)、世界新記録の939盗塁",
+    "1984": "中日、強竜打線",
+    //"1985": "阪神、新ダイナマイト打線、バックスクリーン３連発",
+    "1985": "横浜、スーパーカートリオ",
+    "1986": "バース(阪)、落合博満(ロ)、２年連続３冠王",
+    "1987": "本塁打王：ランス(広)39本、秋山(西)43本",
+    "1988": "本塁打王：ポンセ(横)33本、門田(ソ)44本",
+    "1989": "オリックス、ブルーサンダー打線",
+    "1990": "本塁打王：落合(中)34本、デストラーデ(西)42本",
+    "1991": "本塁打王：落合(中)37本、デストラーデ(西)39本",
+    "1992": "甲子園(阪)、ラッキーゾーン撤去。",
+    //近鉄、いてまえ打線１
+    "1993": "本塁打王：青田(巨)32本、大下(日)26本",
+    "1994": "イチロー(オ)、シーズン210安打の日本新記録(当時)",
+    //"1994":"西武パリーグ５連覇達成"
+    "1995": "がんばろうKOBE、オリックス優勝",
+    "1996": "本塁打王：山崎(中)39本、ニール(オ)32本",
+    "1997": "本塁打王：ホージー(ヤ)38本、ウィルソン(日)37本",
+    "1998": "横浜、マシンガン打線",
+    //"1998":"日本ハム、ビッグバン打線"
+    "1999": "本塁打王：青田(巨)32本、大下(日)26本",
+    "2000": "巨人、ミレニアム打線",
+    //ON対決
+    "2001": "ローズ(楽)、シーズン55本塁打の日本タイ記録(当時)",
+    //近鉄、いてまえ打線２、ソフトバンク、ダイハード打線
+    "2002": "カブレラ(西)、シーズン55本塁打の日本タイ記録(当時)",
+    "2003": "「飛ぶボール」2000年代前半",
+    "2004": "巨人、史上最強打線",
+    //横浜、大ちゃんス打線
+    "2005": "プロ野球再編、楽天参入、セ・パ交流戦開始",
+    "2006": "第１回WBC優勝",
+    "2007": "本塁打王：村田(横)36本、山崎(楽)43本",
+    "2008": "神宮球場(ヤ)、両翼のフェンスを広げる",
+    "2009": "第２回WBC連覇",
+    "2010": "本塁打王：ラミレス(巨)49本、T-岡田(オ)33本",
+    "2011": "「飛ばないボール」統一球問題(2011,2012年)",
+    "2012": "本塁打王：バレンティン(ヤ)31本、中村(西)27本",
+    "2013": "バレンティン(ヤ)、シーズン60本塁打の日本新記録(現在)",
+    //"2013":"田中将大(楽)、シーズン24連勝の日本新記録、楽天初優勝"
+    //"2013":"Kスタ宮城(楽)、Eウイング設置"
+    "2014": "黒田博樹(広)、’男気’日本復帰(2014オフ)",
+    "2015": "ヤフードーム(ソ)、ホームランテラス席増設",
+    "2016": "大谷翔平(日)、史上初の投打ベストナイン同時受賞",
+  }
+
+
+  d3.json("./data/baseball_data.json", function(nations) {
+    createLabelArrays();
+    //配列に球団入れる
+    function createLabelArrays() {
+      // removing duplicates on labels
+      uniqueLabelArray = {"name":[],"region":[],"color":[]};
+      nations.forEach(function (d) {
+        if (uniqueLabelArray.name.indexOf(d.name) < 0) uniqueLabelArray.name.push(d.name);
+        if (uniqueLabelArray.region.indexOf(d.region) < 0) uniqueLabelArray.region.push(d.region);
+        if (uniqueLabelArray.color.indexOf(d.color) < 0) uniqueLabelArray.color.push(d.color);
+      });
+    }
+    console.log(uniqueLabelArray.name);
+    console.log(uniqueLabelArray.color);
+
+    var color = d3.scaleOrdinal().range(uniqueLabelArray.color);
+
+    var bisect = d3.bisector(function(d){ return d[0];});
+
+    //透明度
+    var opacitys = new Object();
+    var opacitys_logo = new Object();
+    var font_sizes = new Object();
+    var opacitys_div_rect = 1.0;
+
+
+    for(var i=0; i<uniqueLabelArray.name.length; i++){
+      opacitys[uniqueLabelArray.name[i]] = 1;
+      opacitys_logo[uniqueLabelArray.name[i]] = 1;
+    }
+
+    happening.text(events[currentYear]);
+
+    //円の設定
+    var circle = svg_contents.append("g")
+    .attr("class","circles")
+    .selectAll(".circle")
+    .data(interpolateData())
+    .enter()
+    .append("circle")
+    .attr("class","circle")
+    .attr("fill",function(d){
+      return color(uniqueLabelArray.name.indexOf(d.name))
+    })
+    .attr("stroke","white")
+    // .attr("stroke",function(d){
+    //   if(d.ranking == 1){
+    //   return "white";
+    //   }
+    //   else{
+    //     return "grey";
+    //   }})
+    .attr("stroke-width",function(d){
+      if(d.ranking == 1){
+        return 10;
+      }
+      else{
+        return 2;
+      }})
+      .attr("z-index",function(d){
+        return 6 - d.ranking;
+      })
+
+      .call(position)
+      .sort(order)
+
+      .on( "click", function(d) { //ここに、if,elseで、元に戻す処理書くとか
+        var opacitys_sum = 0;
+        for(var i=0; i<uniqueLabelArray.name.length; i++){
+          opacitys_sum += opacitys[uniqueLabelArray.name[i]];
+        }
+        console.log(opacitys_sum);
+        if(opacitys_sum == 12){
+          for(var i=0; i<uniqueLabelArray.name.length; i++){
+            opacitys[uniqueLabelArray.name[i]] = 0.2;
+            opacitys_logo[uniqueLabelArray.name[i]] = 0.2;
+          }
+          opacitys[d.name] = 1;
+          opacitys_logo[d.name] = 1;
+          opacity_change(d);
+        }else if(opacitys[d.name] == 0.2){
+          opacitys[d.name] = 1;
+          opacitys_logo[d.name] = 1;
+          opacity_change(d);
+        }else if(opacitys[d.name] == 1.0 && opacitys_sum > 4.5){
+          opacitys[d.name] = 0.2;
+          opacitys_logo[d.name] = 0.2;
+          opacity_change(d);
+        }else{
+          for(var i=0; i<uniqueLabelArray.name.length; i++){
+            opacitys[uniqueLabelArray.name[i]] = 1.0;
+            opacitys_logo[uniqueLabelArray.name[i]] = 1.0;
+          }
+          opacity_change(d);
+        }
+
+      })
+
+      .on("mouseover", function(d,i){
+        circle.style("cursor","pointer");
+        div_rect.style("opacity",1.0);//コメントアウト
+        //div1.text(d.name);
+        div1.text(d.japanese_name);
+        div3.text("ホームラン数 "+ d.homerun);
+        div4.text("盗塁数 " + d.steal);
+        div2.text("順位 " + d.ranking + "位");
+      })
+      .on("mouseout", function(d){
+        div_rect.style("opacity",0);//コメントアウト
+        div1.text("");
+        div2.text("");
+        div3.text("");
+        div4.text("");
+      });
+
+      var logo_size = 40;
+      var logos = svg_contents.append("g")
+      .attr("class", "images")
+      .selectAll()
+      .data(interpolateData())
+      .enter()
+      .append('image')
+      .attr('xlink:href', function(d,i){
+        return "images/" + d.name +".png";
+      })
+      .attr('width', logo_size)
+      .attr('height', logo_size)
+      //.attr('x', 0)
+      //.attr('y', function(d,i){
+      //    return 55*i;
+      //  })
+      /*.attr("z-index",function(d){
+      return 10;
+    })*/
+    .on("mouseover", function(d){
+      logos.style("cursor","pointer");
+      div_rect.style("opacity",1.0);
+      div1.text(d.name);
+      div1.text(d.japanese_name);
+      div3.text("ホームラン数 "+ d.homerun);
+      div4.text("盗塁数 " + d.steal);
+      div2.text("順位 " + d.ranking + "位");
+    })
+    .on("mouseout", function(d){
+      //opacitys_div_rect = 0;
+      //div_rect_opacity_change(d);
+      div_rect.style("opacity",0);
+      div1.text("");
+      div2.text("");
+      div3.text("");
+      div4.text("");
+    })
+    .call(position)
+    .on( "click", function(d) { //ここに、if,elseで、元に戻す処理書くとか
+      var opacitys_sum = 0;
+      for(var i=0; i<uniqueLabelArray.name.length; i++){
+        opacitys_sum += opacitys[uniqueLabelArray.name[i]];
+      }
+      console.log(opacitys_sum);
+      if(opacitys_sum == 12){
+        for(var i=0; i<uniqueLabelArray.name.length; i++){
+          opacitys[uniqueLabelArray.name[i]] = 0.2;
+          opacitys_logo[uniqueLabelArray.name[i]] = 0.2;
+        }
+        opacitys[d.name] = 1;
+        opacitys_logo[d.name] = 1;
+        opacity_change(d);
+      }else if(opacitys[d.name] == 0.2){
+        //console.log("opavcity---");
+        opacitys[d.name] = 1;
+        opacitys_logo[d.name] = 1;
+        opacity_change(d);
+      }else if(opacitys[d.name] == 1.0 && opacitys_sum > 4.5){
+        opacitys[d.name] = 0.2;
+        opacitys_logo[d.name] = 0.2;
+        opacity_change(d);
+      }else{
+        for(var i=0; i<uniqueLabelArray.name.length; i++){
+          opacitys[uniqueLabelArray.name[i]] = 1.0;
+          opacitys_logo[uniqueLabelArray.name[i]] = 1.0;
+        }
+        opacity_change(d);
+      }
+
+    });
+
+    logo_size_legend = 20;
+    var legend_width = 930;
+
+    var logo_legend = svg_contents.append("g")
+    .attr("class", "images")
+    .selectAll()
+    .data(interpolateData())
+    .enter()
+    .append('image')
+    .attr('xlink:href', function(d,i){
+      return "images/" + d.name +".png";
+    })
+    .attr('width', logo_size_legend)
+    .attr('height', logo_size_legend)
+    .attr('x', function(d,i){
+      if(i <= 5){return legend_width;}
+      else{ return legend_width+210;}
+    })
+    .attr('y', function(d,i){
+      if(i<=5){return 20*i;}
+      else{return 20*i -120;}
+    })
+
+    function opacity_change(d){
+      circle.attr("opacity",function(d,i){
+        //console.log("opacity!!");
+        return opacitys[d.name]
+      })
+      logos.attr("opacity",function(d,i){
+        return opacitys_logo[d.name]
+      })
+    }
+
+    function font_size_change(d){
+      legend_text.attr("font-size", function(d,i){
+        return font_sizes[d.name];
+      })
+    }
+
+    /*
+    function background_change(d){
+    console.log("clicked");
+    legend_pacific
+    .transition()
+    .style("background-color", "red");
+    //legend_pacific.text("dddddd");
+    //legend_pacific.attr("fill","white");
+  }
+  */
+  function reset_opacitys(d){
+    for(var i=0; i<uniqueLabelArray.name.length; i++){
+      opacitys[uniqueLabelArray.name[i]] = 1;
+      opacitys_logo[uniqueLabelArray.name[i]] = 1;
+    }
+  }
+
+  function popup_change(d){
+    tooltip.style("text-anchor", "start")
+    .style("fill",function(d,i){
+      return color(i)
+    })
+    .text(function(d){return d.name;})
+  }
+
+  d3.select("body").on("keydown",function(){
+    updateYear(d3.event.keyCode);
+  });
+
+
+  //---------------------------------------------------------
+  var legend = svg_contents.selectAll(".legend")
+  .data(interpolateData)
+  .enter().append("g")
+  .attr("class", "legend")
+  .attr("transform",function(d,i){
+    if(i>5){ return "translate(40," + (i * 20 - 120) + ")";}
+    else{return "translate(0," + i*20 + ")";}
+  });
+  //800,970
+  legend.append("rect")
+  .attr("x", function(d,i){
+    if(i <=5){return legend_width+30;}
+    else{return legend_width+200; }
+  })
+  .attr("width", 18)
+  .attr("height", 18)
+  .style("fill",function(d,i){
+    return color(i);
+  });
+  //770,950
+  //legend_background作るべきかも
+  var legend_text = svg_contents.selectAll(".legend_text")
+  .data(interpolateData)
+  .enter().append("text")
+  .attr("class", "legend_text")
+  .attr("x", function(d,i){
+    if(i <=5){return legend_width-10;}
+    else{return legend_width+200; }
+  })
+  .attr("y", function(d,i){
+    if(i > 5){ return 9 + i*20 -120; }
+    else{ return 9 + i*20; }
+  })
+  .attr("dy", ".35em")
+  .style("text-anchor", "end")
+  .style("fill",function(d,i){
+    return color(i);
+  })
+  //.text(function(d) { return d.name + " " + d.ranking + "位"; })
+  .text(function(d) { return d.japanese_name + " " + d.ranking + "位"; })
+  .on("mouseover", function(d){
+    legend_text.style("cursor","pointer");
+    font_sizes[d.name] = "20px";
+    font_size_change(d);
+    //legend_text.style("font-size","20px");
+    //legend_text.style("color", "orange");
+    console.log(d.name);
+    //opacitys[d.name] = 0.5;
+    //opacity_change();
+  })
+  .on("mouseout", function(d){
+    legend_text.style("cursor","pointer");
+    font_sizes[d.name] = "16px";
+    font_size_change(d);
+    //opacitys[d.name] = 1.0;
+    //opacity_change();
+  })
+  .on("click",function(d){
+    var opacitys_sum = 0;
+    for(var i=0; i<uniqueLabelArray.name.length; i++){
+      opacitys_sum += opacitys[uniqueLabelArray.name[i]];
+    }
+    console.log(opacitys_sum);
+    if(opacitys_sum == 12){
+      for(var i=0; i<uniqueLabelArray.name.length; i++){
+        opacitys[uniqueLabelArray.name[i]] = 0.2;
+        opacitys_logo[uniqueLabelArray.name[i]] = 0.2;
+      }
+      opacitys[d.name] = 1;
+      opacitys_logo[d.name] = 1;
+      opacity_change(d);
+    }else if(opacitys[d.name] == 0.2){
+      opacitys[d.name] = 1;
+      opacitys_logo[d.name] = 1;
+      opacity_change(d);
+    }else if(opacitys[d.name] == 1.0 && opacitys_sum > 4.5){
+      opacitys[d.name] = 0.2;
+      opacitys_logo[d.name] = 0.2;
+      opacity_change(d);
+    }else{
+      for(var i=0; i<uniqueLabelArray.name.length; i++){
+        opacitys[uniqueLabelArray.name[i]] = 1.0;
+        opacitys_logo[uniqueLabelArray.name[i]] = 1.0;
+      }
+      opacity_change(d);
+    }
+
+  })
+  ;
+
+  /*
+  var legend_text = legend.append("text")
+  .attr("x", function(d,i){
+  if(i <=5){return 770;}
+  else{return 930; }
+})
+.attr("y", 9)
+.attr("dy", ".35em")
+.style("text-anchor", "end")
+.style("fill",function(d,i){
+return color(i);
+})
+.text(function(d) { return d.name + " " + d.ranking; });
+*/
+//ranking_change
+var div_pacific = svg_contents.append("text")
+.attr("class", "tooltip")
+.attr("fill","white")
+.attr("text-anchor","end")
+.attr("x",legend_width+220)
+.attr("y",-10)
+.style("opacity", 0)
+.on("mouseover", function(d){
+  div_pacific.style("cursor","pointer");
+  div_pacific.style("font-size","20px");
+})
+.on("mouseout", function(d){
+  div_pacific.style("cursor","pointer");
+  div_pacific.style("font-size","16px");
+})
+.on("click",function(d){
+  for(var i=0; i<6; i++){
+    opacitys[uniqueLabelArray.name[i]] = 0.2;
+    opacitys_logo[uniqueLabelArray.name[i]] = 0.2;
+
+  }
+  for(var i=6; i<uniqueLabelArray.name.length; i++){
+    opacitys[uniqueLabelArray.name[i]] = 1.0;
+    opacitys_logo[uniqueLabelArray.name[i]] = 1.0;
+  }
+  opacity_change(d);
+})
+;
+
+div_pacific.transition()
+.duration(500)
+.style("opacity", 1.0)
+.text("パ・リーグ");
+
+var div_central = svg_contents.append("text")
+.attr("class", "tooltip")
+.attr("fill","white")
+.attr("text-anchor","end")
+.attr("x",legend_width)
+.attr("y",-10)
+.style("opacity", 0)
+.on("mouseover", function(d){
+  div_central.style("cursor","pointer");
+  div_central.style("font-size","20px");
+})
+.on("mouseout", function(d){
+  div_central.style("cursor","pointer");
+  div_central.style("font-size","16px");
+})
+.on("click",function(d){
+  for(var i=0; i<6; i++){
+    opacitys[uniqueLabelArray.name[i]] = 1.0;
+    opacitys_logo[uniqueLabelArray.name[i]] = 1.0;
+
+  }
+  for(var i=6; i<uniqueLabelArray.name.length; i++){
+    opacitys[uniqueLabelArray.name[i]] = 0.2;
+    opacitys_logo[uniqueLabelArray.name[i]] = 0.2;
+  }
+  opacity_change(d);
+})
+;
+
+div_central.transition()
+.duration(500)
+.style("opacity", 1.0)
+.text("セ・リーグ");
+
+var div_all = svg_contents.append("text")
+.attr("class", "tooltip")
+.attr("fill","white")
+.attr("text-anchor","end")
+.attr("x",legend_width + 110)
+.attr("y",-20)
+.style("opacity", 0)
+.on("mouseover", function(d){
+  div_all.style("cursor","pointer");
+  div_all.style("font-size","20px");
+})
+.on("mouseout", function(d){
+  div_all.style("cursor","pointer");
+  div_all.style("font-size","16px");
+})
+.on("click",function(d){
+  for(var i=0; i<uniqueLabelArray.name.length; i++){
+    opacitys[uniqueLabelArray.name[i]] = 1.0;
+    opacitys_logo[uniqueLabelArray.name[i]] = 1.0;
+  }
+  opacity_change(d);
+})
+;
+
+div_all.transition()
+.duration(500)
+.style("opacity", 1.0)
+.text("全球団");
+
+//矢印の
+var arrayImages = ["left_array","right_array"];
+var array_size = 30;
+var arrays = svg_header.append("g")
+.attr("class", "array_image")
+.selectAll()
+.data(arrayImages)
+.enter()
+.append('image')
+.attr('xlink:href', function(d,i){
+  console.log(d.name);
+  console.log(i);
+  if(i == 0){ return "images/left_array.png" ;}
+  else{return "images/right_array.png";}
+  //return "images/" + d.name +".png";
+})
+.attr('width', array_size)
+.attr('height', array_size)
+.attr("x",260)
+.attr("y",function(d,i){
+  if(i == 0){return 10 - 20;}
+  else{ return 10 + 20;}
+})
+.on("click",function(d,i){
+  if (i == 0 && currentYear != 1950){
+    yearLabel.text(Math.round(--currentYear));
+    circle.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(position).sort(order);
+    logos.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(position);
+    legend_text.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(update_text);
+    happening.text(events[currentYear]);
+
+  }else if (i == 1 && currentYear != 2016){
+    yearLabel.text(Math.round(++currentYear));
+    circle.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(position).sort(order);
+    logos.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(position);
+    legend_text.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(update_text);
+    happening.text(events[currentYear]);
+
+  }
+})
+.on("mouseover", function(d){
+  arrays.style("cursor","pointer");
+})
+.on("mouseout", function(d){
+  arrays.style("cursor","pointer");
+})
+;
+
+//-----------------------------------------------------------------
+
+
+function updateYear(key){
+  console.log(key);
+  //39:right arrow,37:left arrow
+  if(key == 37 && currentYear != 1950){
+    yearLabel.text(Math.round(--currentYear));
+    circle.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(position).sort(order);
+    logos.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(position);
+    legend_text.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(update_text);
+    happening.text(events[currentYear]);
+
+    //div_click1.data(interpolateData(currentYear),function(d)
+    //{return d.homerun;});
+  }else if(key == 39 && currentYear != 2016){
+    yearLabel.text(Math.round(++currentYear));
+    circle.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(position).sort(order);
+    logos.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(position);
+    legend_text.data(interpolateData(currentYear),function(d)
+    {return d.name;}).call(update_text);
+    happening.text(events[currentYear]);
+
+    //div_click1.text();
+    //div_click1.text(interpolateData(currentYear),function(d)
+    //{return d.name;});
+  }
+  else if(key == 83){
+    reset_opacitys(d);
+  }//'s'
+}
+
+function update_text(p){
+  //p.text(function(d){ return d.name + " " + d.ranking + "位";});
+  p.text(function(d){ return d.japanese_name + " " + d.ranking + "位";});
+
+
+  //legend_text.text(function(d){ return d.name + " " + d.ranking;})
+  //p.attr("x",950);
+  // p.attr("y", 9)
+  // p.attr("dy", ".35em")
+  // p.style("text-anchor", "end")
+  console.log(p);
+  //p.text.text(function(d){ return d.name + "  " + d.ranking;});
+}
+
+
+function position(p){
+  p.attr("cx",function(d){return homerunScale(d.homerun);});
+  p.attr("cy",function(d){return stealScale(d.steal);});
+  //p.attr("r",function(d){return 30 - 2*d.ranking });
+  p.attr("r",function(d){
+    if(d.ranking == 1){ return 55}
+    else if(d.ranking == 2){ return 40}
+    else if(d.ranking == 3){ return 40}
+    else if(d.ranking == 4){ return 30}
+    else if(d.ranking == 5){ return 30}
+    else{return 30}
+  });
+  p.attr("x",function(d){return homerunScale(d.homerun)-logo_size/2;});
+  p.attr("y",function(d){return stealScale(d.steal) -logo_size/2;});
+
+  p.attr("stroke-width",function(d){
+    if(d.ranking == 1){
+      return 10;
+    }
+    else{
+      return 2;
+    }
+  });
+}
+
+function order(a,b){
+  return a.ranking - b.ranking;
+}
+
+
+function interpolateValues(values, year)
+{
+
+  var i = bisect.left(values, year, 0, values.length -1);
+  var a = values[i];
+
+  if(i>0)
+  {
+
+    var b = values[i-1];
+    var t = (year - a[0])/(b[0] - a[0]);
+    return Math.round(a[1] *(1-t) + b[1]*t);
+  }
+
+  return a[1];
+}
+
+function interpolateData()
+{
+
+  return nations.map(
+    function(d) { return {
+      name: d.name,
+      region: d.region,
+      japanese_name: d.japanese_name,
+      //logo: d.logo,
+      color: d.color,
+      homerun: interpolateValues(d.homerun, currentYear),
+      steal: interpolateValues(d.steal, currentYear),
+      ranking: interpolateValues(d.ranking, currentYear)
+    };
+  }
+);
+}
+
+
+});
+
+</script>
+</body></html>
