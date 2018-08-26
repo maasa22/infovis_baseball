@@ -28,16 +28,14 @@
         <div class="container ">
             <h1 class="title">
                 <!-- 夏の甲子園 高校野球都道府県別勝利数 -->
-                高校野球都道府県別勝利数 --d3.js--
+                高校野球都道府県別勝利数 -- d3.jsで可視化してみた --
             </h1>
-            <h3 class="subtitle">
+            <p class="subtitle">
                 高校野球夏の大会の都道府県別勝利数をd3.jsでマッピングしています。<br>
                 勝利数が多い都道府県ほど、濃い色で表示されます。<br>
-                また地図上の都道府県をクリックすると、勝利数上位5校が表示されます。<br>
-            </h2>
-            <p>
-
+                また<strong>地図上の都道府県をクリック</strong>すると、勝利数上位5校が表示されます。<br>
             </p>
+
         </div>
     </div>
 </section>
@@ -120,26 +118,32 @@ d3.json("./lib/japan.topojson", function(data) {
 
 
 
-  var pref_details_school = svg.append("text")
-                        .attr("x", 40)
-                        .attr("y", 100)
-                        .attr("font-size", 18)
-                        .attr("stroke", "none")
-                        .attr("fill", "black")
-                        ;
+
+
+
+var y_offset = 90;
+var y_interval = 20;
 
 var pref_details_school0 = svg.append("text")
 .attr("x", 40)
-.attr("y", 76)
+.attr("y", y_offset)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
 .text("夏の勝利数上位5校")
 ;
 
+var pref_details_school = svg.append("text")
+.attr("x", 40)
+.attr("y", y_offset + 24 + y_interval*0)
+.attr("font-size", 18)
+.attr("stroke", "none")
+.attr("fill", "black")
+;
+
 var pref_details_school2 = svg.append("text")
 .attr("x", 40)
-.attr("y", 120)
+.attr("y", y_offset+24+y_interval*1)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
@@ -147,7 +151,7 @@ var pref_details_school2 = svg.append("text")
 
 var pref_details_school3 = svg.append("text")
 .attr("x", 40)
-.attr("y", 140)
+.attr("y", y_offset+24+y_interval*2)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
@@ -155,7 +159,7 @@ var pref_details_school3 = svg.append("text")
 
 var pref_details_school4 = svg.append("text")
 .attr("x", 40)
-.attr("y", 160)
+.attr("y", y_offset+24+y_interval*3)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
@@ -163,18 +167,29 @@ var pref_details_school4 = svg.append("text")
 
 var pref_details_school5 = svg.append("text")
 .attr("x", 40)
-.attr("y", 180)
+.attr("y", y_offset+24+y_interval*4)
 .attr("font-size", 18)
 .attr("stroke", "none")
 .attr("fill", "black")
 ;
 var pref_details_school6 = svg.append("text")
 .attr("x", 40)
-.attr("y", 224)
+.attr("y", 245)
 .attr("font-size", 26)
 .attr("stroke", "none")
 .attr("fill", "#006600")
 ;
+
+var explain_click = svg.append("text")
+.attr("x", 550)
+.attr("y",245)
+.attr("font-size", 18)
+.attr("stroke", "none")
+.attr("fill", "black")
+.text("⇦気になる県をクリック！")
+;
+
+
 
 //スマートなデフォルト値にしたい。色薄くするとか。or タップしてくださいって文章で書くか。
 pref_details.text("夏 " + "兵庫県" + ": " + "137"+"勝");
@@ -237,7 +252,7 @@ pref_details_school6.text("第100会大会: 報徳学園, 明石商")
 </script>
 
 <!-- 解説コメント 人口比など-->
-<section class="hero">
+<!-- <section class="hero">
     <div class="hero-body" style="background-color: #eeeeee;">
         <div class="container ">
             <h4 class="subtitle">
@@ -246,9 +261,7 @@ pref_details_school6.text("第100会大会: 報徳学園, 明石商")
             <p>
               他にd3.jsで高校野球のデータを可視化されているサイト。<br>
               次回作の参考としたいので、自分への備忘録を兼ねてリンクを貼っておく。<br>
-              <!-- <a href="http://webforest.webcrow.jp/high_school_baseball/">高校野球の優勝回数を県別にまとめてみた-県別甲子園優勝回数</a><br>
-              <a href="https://bl.ocks.org/ko31/56cc872589f80ae07c402e35433c9cde">第100回全国高校野球選手権記念大会の出場校の野球部員数をバブルチャートで可視化</a><br>
-              <a href="https://ko31.github.io/2018koshien_birthplace_d3/">2018夏の甲子園出場校選手の出身都道府県</a><br> -->
+
               <ul>
                 <li>
                   <a href="http://webforest.webcrow.jp/high_school_baseball/">県別の優勝回数</a><br>
@@ -263,7 +276,10 @@ pref_details_school6.text("第100会大会: 報徳学園, 明石商")
             </p>
         </div>
     </div>
-</section>
+</section> -->
+<!-- <a href="http://webforest.webcrow.jp/high_school_baseball/">高校野球の優勝回数を県別にまとめてみた-県別甲子園優勝回数</a><br>
+<a href="https://bl.ocks.org/ko31/56cc872589f80ae07c402e35433c9cde">第100回全国高校野球選手権記念大会の出場校の野球部員数をバブルチャートで可視化</a><br>
+<a href="https://ko31.github.io/2018koshien_birthplace_d3/">2018夏の甲子園出場校選手の出身都道府県</a><br> -->
 
 <!-- 制作方法 -->
 <footer class="footer">
